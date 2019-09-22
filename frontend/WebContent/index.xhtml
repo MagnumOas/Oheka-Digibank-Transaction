@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>DIGIBANK</title>
+    </h:head>
+    <h:body>
+    	<h2>Welcome to DIGIBANK</h2>
+    	<h:form>
+    		<h:panelGrid columns="2" >
+    		<h:outputLabel value="Firstname : "/>
+    	   <h:inputText value="#{customercontroller.customer.firstname}"></h:inputText>
+    	   <h:outputLabel value="Surname : "/>
+    	   <h:inputText value="#{customercontroller.customer.surname}"></h:inputText>
+    	   <h:outputLabel value="Source Passport : "/>
+    	   <h:inputText value="#{customercontroller.customer.sourcePass}"></h:inputText>
+    	   <h:outputLabel value="Destination Passport : "/>
+    	   <h:inputText value="#{customercontroller.customer.destPass}"></h:inputText>
+    	   <h:outputLabel value="Destination Bank : "/>
+    	   <h:inputText value="#{customercontroller.customer.destBank}"></h:inputText>
+    	   <h:outputLabel value="Destination Country : "/>
+    	   <h:inputText value="#{customercontroller.customer.destCountry}"></h:inputText>
+    	   <h:outputLabel value="Account Number : "/>
+    	   <h:inputText value="#{customercontroller.customer.accNumber}"></h:inputText>
+    	   <h:outputLabel value="Amount : "/>
+    	   <h:inputText value="#{customercontroller.customer.amount}"></h:inputText>
+    	   </h:panelGrid>
+    	   <h:commandButton value="submit" action="#{customercontroller.addNewTransaction}"></h:commandButton>
+    	</h:form>
+    </h:body>
+</html>
